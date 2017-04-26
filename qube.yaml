@@ -1,0 +1,32 @@
+id: 0b327d65-1ce0-4d6a-9116-632b9a4c5fa2
+version: v2
+name: jedis
+apptype: api
+language: java
+containerName: jedis
+toolchain:
+  id: 58e56a68acac5a0020e2b930
+  name: Qubeship-Java-Toolchain
+opinion:
+  id: default
+  name: Default Opinion
+endpoint:
+  id: 58e574022f9f07000b226ded
+  name: Qubeship Sandbox Cluster
+  type: target
+variables:
+  - name: APP_VERSION
+    value: v0.1
+build:
+  compile:
+    publish:
+     - target/
+bake:
+  skip: false
+test:
+  skip: true
+deploy_to_qa:
+  skip: true
+deploy_to_prod:
+  skip: false
+

@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/xetorthio/jedis.png?branch=master)](https://travis-ci.org/xetorthio/jedis)
 
+test0
+
 # Jedis
 
 Jedis is a blazingly small and sane [Redis](http://github.com/antirez/redis "Redis") java client.
